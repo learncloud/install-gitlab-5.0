@@ -68,7 +68,7 @@
          <br>
          
     
-4. gitlab.config 설정
+4. `gitlab.config` 파일 수정
    ```config
    #imageRegistry=172.22.11.2:30500 # 레지스트리 주소 (폐쇄망 아닐 경우 빈 값으로 설정)
    imageRegistry=192.168.178.17:5000 # 레지스트리 주소 (폐쇄망 아닐 경우 빈 값으로 설정)
