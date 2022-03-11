@@ -77,7 +77,7 @@
    authUrl='https://192.168.178.81' # 키클록(hyperauth) URL (`http://`또는 `https://` 포함)
    authClient='gitlab' # 키클록 클라이언트 이름
    authSecret='*******' # 키클록 클라이언트 시크릿
-   authTLSSecretName='gitlab-secret' # TLS 시크릿 이름
+   authTLSSecretName='gitlab-secret' # TLS 시크릿 이름 , 임의 설정
    custom_domain_name='tmaxcloud.org' #(`http://`또는 `https://`미포함)
    # custom_domain_name='console.192.168.178.82.nip.io'
    
