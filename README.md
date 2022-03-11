@@ -48,6 +48,7 @@
          ```bash
          #맞는지 모르지만 해당 내용 스크린샷으로 바탕화면에 있음
          KEYCLOAK_CERT_FILE=<인증서 파일 경로>
+         # KEYCLOAK_CERT_FILE=/etc/kubernetes/pki/hypercloud-root-ca.crt
          KEYCLOAK_TLS_SECRET_NAME=<Keycloak TLS 인증서가 저장될 Secret 이름>
          
          kubectl create ns gitlab-system
