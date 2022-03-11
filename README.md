@@ -79,6 +79,7 @@
    authSecret='*******' # 키클록 클라이언트 시크릿
    authTLSSecretName='gitlab-secret' # TLS 시크릿 이름
    custom_domain_name='tmaxcloud.org' #(`http://`또는 `https://`미포함)
+   # custom_domain_name='console.192.168.178.82.nip.io'
    
    ```
    
