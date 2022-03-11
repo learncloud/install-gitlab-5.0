@@ -49,7 +49,8 @@
          #맞는지 모르지만 해당 내용 스크린샷으로 바탕화면에 있음
          KEYCLOAK_CERT_FILE=<인증서 파일 경로>
          # KEYCLOAK_CERT_FILE=/etc/kubernetes/pki/hypercloud-root-ca.crt
-         KEYCLOAK_TLS_SECRET_NAME=<Keycloak TLS 인증서가 저장될 Secret 이름>
+         KEYCLOAK_TLS_SECRET_NAME=<Keycloak TLS 인증서가 저장될 Secret 이름> # Secret명 'gitlab-secret' 넣으면됨, 넣는 이유는 아래 Secret 이름에 들어갈
+         #
          
          kubectl create ns gitlab-system
          
