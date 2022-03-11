@@ -39,7 +39,7 @@
 
     2. 클라이언트 시크릿 복사
     - `Client > gitlab > Credentials > Secret` 복사
-
+   <br>
 
     3. TLS 시크릿 
        
@@ -62,7 +62,7 @@
            tls.key: $(echo -n 'dummyKey' | base64 -w 0)
          EOT
          ```
-         
+         <br>
          
     
 4. gitlab.config 설정
