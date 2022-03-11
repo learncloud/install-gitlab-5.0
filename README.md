@@ -35,7 +35,7 @@
     - Client-Protocol: `openid-connect`
     - AccessType: `confidential`
     - Valid Redirect URIs: `*`
-
+   <br>
 
     2. 클라이언트 시크릿 복사
     - `Client > gitlab > Credentials > Secret` 복사
