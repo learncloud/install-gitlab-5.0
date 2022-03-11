@@ -30,6 +30,7 @@
 
 3. **(Keycloak 연동 시-hyperauth)**
     1. 키클록에서 클라이언트 생성
+    - Client → Create
     - Name: `gitlab`
     - Client-Protocol: `openid-connect`
     - AccessType: `confidential`
