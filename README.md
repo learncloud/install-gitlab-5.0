@@ -24,9 +24,11 @@
    # 생성된 파일 모두 SCP 또는 물리 매체를 통해 폐쇄망 환경으로 복사
    cd ../..
    scp -r install-gitlab <REMOTE_SERVER>:<PATH>
+   # scp -r install-gitlab 192.168.178.17:5000
+   
    ```
 
-3. **(Keycloak 연동 시)**
+3. **(Keycloak 연동 시-hyperauth)**
     1. 키클록에서 클라이언트 생성
     - Name: `gitlab`
     - Client-Protocol: `openid-connect`
