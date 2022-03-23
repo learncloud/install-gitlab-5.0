@@ -101,6 +101,11 @@
 * 목적 : `GitLab에 필요한 구성 요소 설치`
 * 생성 순서 : 아래 command로 설치 yaml 적용
    ```bash
+   # 우선적으로 gitlab에 할당해줄 storage class volume이름 을 써줘야합니다
+   cd ~/install-gitlab-5.0/manifest/yaml
+   vi template.yaml
+   #28번째줄  Storage class name이름 수정
+   #   value: nfs
    ./installer.sh install
    ```
 
@@ -112,5 +117,5 @@
 * 목적 : `GitLab 구성 요소 삭제`
 * 생성 순서 : 아래 command로 설치 yaml 삭제
    ```bash
-   ./installer.sh unsinstall
+   ./installer.sh uninstall
    ```
