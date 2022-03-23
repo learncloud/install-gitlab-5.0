@@ -96,6 +96,7 @@
 1. [GitLab 설치](#step-1-gitlab-설치)
 
 ## Step 1. GitLab 설치
+ **POD가 올라오기까지 시간이 매우 소요**
 * 목적 : `GitLab에 필요한 구성 요소 설치`
 * 생성 순서 : 아래 command로 설치 yaml 적용
    ```bash
