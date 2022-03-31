@@ -14,6 +14,7 @@
 ## 폐쇄망 설치 가이드
 설치를 진행하기 전 아래의 과정을 통해 필요한 이미지 및 yaml 파일을 준비한다.
 1. 폐쇄망에서 설치하는 경우 사용하는 image repository에 Gitlab 설치 시 필요한 이미지를 push한다.
+2. 퍼블릭망에서 설치하는 경우 image repository를 공란으로 주석처리합니다(검증은 되지않았고, 이렇게 진행해서 문제없이 동작함)
     * 작업 디렉토리 생성 및 환경 설정
    ```bash
    git clone https://github.com/learncloud/install-gitlab-5.0.git
