@@ -88,7 +88,7 @@
            tls.key: $(echo -n 'dummyKey' | base64 -w 0)
          EOT
          ```
-         ![시크릿 설정](docs/figure/secret-setting.png)
+         ![시크릿 설정](docs/figure/secret-setting1.png)
          
     
 4. `gitlab.config` 파일 수정
