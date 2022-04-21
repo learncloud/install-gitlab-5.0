@@ -25,7 +25,7 @@
    ./installer.sh prepare-online
    
    ```
-   ![config수정](figure/modi_config.png)
+   ![config수정](docs/figure/modi_config.png)
 
 
 2. 폐쇄망 환경으로 전송
