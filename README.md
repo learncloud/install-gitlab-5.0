@@ -45,9 +45,11 @@
    ```
    
  * 위의 과정에서 생성한 tar 파일들을 폐쇄망 환경으로 이동시킨 뒤 사용하려는 registry에 이미지를 push한다.
-   
+   - 현재는 public망에서 구축하는 시나리오
    ```bash
-   ./installer.sh prepare-offline
+   ./installer.sh prepare-online
+   #./installer.sh prepare-offline
+   
    ```
 
 1. 폐쇄망 환경으로 전송
