@@ -21,7 +21,7 @@
    git clone https://github.com/learncloud/install-gitlab-5.0.git
    cd manifest
    chmod 777 installer.sh
-   # public망에서 설치할 경우, gitlab.config에서 image repository를 주석처리
+   # public망에서 설치할 경우, gitlab.config에서 imageRegistry를 주석처리
    ./installer.sh prepare-online
    
    ```
