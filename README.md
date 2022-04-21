@@ -17,7 +17,7 @@
 2. 퍼블릭망에서 설치하는 경우 image repository를 공란으로 주석처리합니다
 
 
-    * 작업 디렉토리 생성 및 환경 설정
+  * 작업 디렉토리 생성 및 환경 설정
    ```bash
    
    git clone https://github.com/learncloud/install-gitlab-5.0.git
@@ -28,9 +28,9 @@
    ```
    ![config수정](docs/figure/modi_config.png)
        
-   * `gitlab.config` 파일 수정
+  * `gitlab.config` 파일 수정
    ```config
-   #imageRegistry=172.22.11.2:30500 # 레지스트리 주소 (폐쇄망 아닐 경우 빈 값으로 설정)
+   #imageRegistry=172.22.11.2:30500 # 레지스트리 주소 (폐쇄망 아닐 경우 주석처리)
    imageRegistry=192.168.178.17:5000 # 레지스트리 주소 (폐쇄망 아닐 경우 빈 값으로 설정)
   
    # 아래는 Keycloak 연동시 기재 필요
@@ -43,7 +43,7 @@
    
    ```
    
-   * 위의 과정에서 생성한 tar 파일들을 폐쇄망 환경으로 이동시킨 뒤 사용하려는 registry에 이미지를 push한다.
+  * 위의 과정에서 생성한 tar 파일들을 폐쇄망 환경으로 이동시킨 뒤 사용하려는 registry에 이미지를 push한다.
    ```bash
    ./installer.sh prepare-offline
    ```
