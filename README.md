@@ -17,7 +17,7 @@
 2. 퍼블릭망에서 설치하는 경우 image repository를 공란으로 주석처리합니다
 
 
-   * 작업 디렉토리 생성 및 환경 설정
+ * 작업 디렉토리 생성 및 환경 설정
    ```bash
    
    git clone https://github.com/learncloud/install-gitlab-5.0.git
@@ -44,7 +44,7 @@
    
    ```
    
-   * 위의 과정에서 생성한 tar 파일들을 폐쇄망 환경으로 이동시킨 뒤 사용하려는 registry에 이미지를 push한다.
+ * 위의 과정에서 생성한 tar 파일들을 폐쇄망 환경으로 이동시킨 뒤 사용하려는 registry에 이미지를 push한다.
    
    ```bash
    ./installer.sh prepare-offline
