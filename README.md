@@ -68,7 +68,7 @@
          **HyperAuth를 사용할 경우 HyperAuth 설치 시 마스터 노드들에 설치된 `/etc/kubernetes/pki/hypercloud-root-ca.crt` 인증서 사용**
          
          ```bash
-         #그냥 변수 넣듯 진행하면됩니다
+         # 변수 지정하듯 진행
          #맞는지 모르지만 해당 내용 스크린샷으로 바탕화면에 있음
          KEYCLOAK_CERT_FILE=<인증서 파일 경로>
          # KEYCLOAK_CERT_FILE=/etc/kubernetes/pki/hypercloud-root-ca.crt
