@@ -60,7 +60,8 @@
 
     2. 클라이언트 시크릿 복사
     - `Client > gitlab > Credentials > Secret` 복사
-   <br>
+   
+    ![클라이언트 시크릿](docs/figure/client-Secret.png)
 
     3. TLS 시크릿 
        
