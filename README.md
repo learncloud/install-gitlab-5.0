@@ -43,7 +43,10 @@
     - Client ID : gitlab
     - Client Protocol : openid-connect
     - Save 클릭
-    <br>
+    
+    ![클라이언트 생성1](docs/figure/client-create.png)
+    
+    ![클라이언트 생성2](docs/figure/client-create2.png)
 
     1. Settings부분에서 클라이언트에 대한 설정을 진행
     
@@ -51,7 +54,9 @@
     - Client-Protocol: `openid-connect`
     - AccessType: `confidential`
     - Valid Redirect URIs: `*`
-   <br>
+   
+    ![클라이언트 생성2](docs/figure/client-setting.png)
+   
 
     2. 클라이언트 시크릿 복사
     - `Client > gitlab > Credentials > Secret` 복사
