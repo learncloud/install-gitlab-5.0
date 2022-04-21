@@ -129,7 +129,7 @@
    #   value: nfs
    ./installer.sh install
    ```
-
+  ![nfs 연결](docs/figure/mount-git-nfs.png)
 
 ## 삭제 가이드
 1. [GitLab 삭제](#step-1-gitlab-삭제)
