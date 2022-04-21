@@ -26,6 +26,7 @@
    # public망에서 설치할 경우, gitlab.config에서 imageRegistry를 주석처리
    
    ```
+   
    ![config수정](docs/figure/modi_config.png)
        
    * `gitlab.config` 파일 수정
@@ -44,6 +45,7 @@
    ```
    
    * 위의 과정에서 생성한 tar 파일들을 폐쇄망 환경으로 이동시킨 뒤 사용하려는 registry에 이미지를 push한다.
+   
    ```bash
    ./installer.sh prepare-offline
    ```
@@ -57,7 +59,7 @@
    
    ```
 
-2 **(Keycloak 연동 시-hyperauth)**
+2. **(Keycloak 연동 시-hyperauth)**
     0. 키클록에서 클라이언트 생성
     - Client → Create
     - Client ID : gitlab
