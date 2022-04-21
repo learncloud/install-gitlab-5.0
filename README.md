@@ -15,6 +15,8 @@
 설치를 진행하기 전 아래의 과정을 통해 필요한 이미지 및 yaml 파일을 준비한다.
 1. 폐쇄망에서 설치하는 경우 사용하는 image repository에 Gitlab 설치 시 필요한 이미지를 push한다.
 2. 퍼블릭망에서 설치하는 경우 image repository를 공란으로 주석처리합니다
+
+
     * 작업 디렉토리 생성 및 환경 설정
    ```bash
    
@@ -26,9 +28,28 @@
    
    ```
    ![config수정](docs/figure/modi_config.png)
+       
+   * `gitlab.config` 파일 수정
+   ```config
+   #imageRegistry=172.22.11.2:30500 # 레지스트리 주소 (폐쇄망 아닐 경우 빈 값으로 설정)
+   imageRegistry=192.168.178.17:5000 # 레지스트리 주소 (폐쇄망 아닐 경우 빈 값으로 설정)
+  
+   # 아래는 Keycloak 연동시 기재 필요
+   authUrl='https://192.168.178.81' # 키클록(hyperauth) URL (`http://`또는 `https://` 포함)
+   authClient='gitlab' # 키클록 클라이언트 이름
+   authSecret='*******' # 키클록 클라이언트 시크릿
+   authTLSSecretName='gitlab-secret' # TLS 시크릿 이름 , 임의 설정
+   custom_domain_name='tmaxcloud.org' #(`http://`또는 `https://`미포함)
+   # custom_domain_name='console.192.168.178.82.nip.io'
+   
+   ```
+   
+   * 위의 과정에서 생성한 tar 파일들을 폐쇄망 환경으로 이동시킨 뒤 사용하려는 registry에 이미지를 push한다.
+   ```bash
+   ./installer.sh prepare-offline
+   ```
 
-
-2. 폐쇄망 환경으로 전송
+1 폐쇄망 환경으로 전송
    ```bash
    # 생성된 파일 모두 SCP 또는 물리 매체를 통해 폐쇄망 환경으로 복사
    cd ../..
@@ -37,7 +58,7 @@
    
    ```
 
-3. **(Keycloak 연동 시-hyperauth)**
+2 **(Keycloak 연동 시-hyperauth)**
     0. 키클록에서 클라이언트 생성
     - Client → Create
     - Client ID : gitlab
@@ -90,26 +111,7 @@
          ```
          ![시크릿 설정](docs/figure/secret-setting1.png)
          
-    
-4. `gitlab.config` 파일 수정
-   ```config
-   #imageRegistry=172.22.11.2:30500 # 레지스트리 주소 (폐쇄망 아닐 경우 빈 값으로 설정)
-   imageRegistry=192.168.178.17:5000 # 레지스트리 주소 (폐쇄망 아닐 경우 빈 값으로 설정)
-  
-   # 아래는 Keycloak 연동시 기재 필요
-   authUrl='https://192.168.178.81' # 키클록(hyperauth) URL (`http://`또는 `https://` 포함)
-   authClient='gitlab' # 키클록 클라이언트 이름
-   authSecret='*******' # 키클록 클라이언트 시크릿
-   authTLSSecretName='gitlab-secret' # TLS 시크릿 이름 , 임의 설정
-   custom_domain_name='tmaxcloud.org' #(`http://`또는 `https://`미포함)
-   # custom_domain_name='console.192.168.178.82.nip.io'
-   
-   ```
-   
-5. 위의 과정에서 생성한 tar 파일들을 폐쇄망 환경으로 이동시킨 뒤 사용하려는 registry에 이미지를 push한다.
-   ```bash
-   ./installer.sh prepare-offline
-   ```
+
 
 ## 설치 가이드
 1. [GitLab 설치](#step-1-gitlab-설치)
