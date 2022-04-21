@@ -24,7 +24,6 @@
    cd manifest
    chmod 777 installer.sh
    # public망에서 설치할 경우, gitlab.config에서 imageRegistry를 주석처리
-   ./installer.sh prepare-online
    
    ```
    ![config수정](docs/figure/modi_config.png)
